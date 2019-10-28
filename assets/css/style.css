@@ -17,22 +17,25 @@
 }
 .contentLeft .card .listVideo .listvideos ul {
   padding-left: 15px;
+}
+
+.contentLeft .card .listVideo .listvideos {
   overflow: auto;
   height: 265px;
 }
 
-.contentLeft .card .listVideo .listvideos ul::-webkit-scrollbar-track
+.contentLeft .card .listVideo .listvideos::-webkit-scrollbar-track
 {
   border-radius: 10px;
   
 }
 
-.contentLeft .card .listVideo .listvideos ul::-webkit-scrollbar
+.contentLeft .card .listVideo .listvideos::-webkit-scrollbar
 {
   width: 10px;
 }
 
-.contentLeft .card .listVideo .listvideos ul::-webkit-scrollbar-thumb
+.contentLeft .card .listVideo .listvideos::-webkit-scrollbar-thumb
 {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
@@ -62,6 +65,18 @@
   color: #1288ce;
   font-size: 15px;
   font-family: sans-serif;
+}
+.contentLeft .card .listVideo .mrCustome{
+  margin-right: 10px;
+}
+.textTugas p span {
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 4px 10px;
+  margin-left: 10px;
+  border-radius: 3px;
+  border: 1px solid #3c8dbc;
 }
 
 .contentRight iframe {
@@ -569,6 +584,12 @@
 
 .textQuestion {
   font-size: 15px;
+}
+.tugas {
+  margin-top: 3em;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #dddddd;
 }
 .textQuestion .numTest {
   float: left;
