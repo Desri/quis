@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>- Quis -</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition dashboardDiviralin sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle visible-xs" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-commenting-o bell" aria-hidden="true"></i>
+            </a>
+          </li><li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope-o bell" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o bell"></i>
+              <span class="label label-danger">10</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 10 notifications</li>
+              <li>
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                      page and may cause design problems
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-red"></i> 5 new members joined
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> You changed your username
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../../assets/img/avatar2.png" class="user-image" alt="User Image">
+              <span class="hidden-xs text-danger"><i class="fa fa-sort-down fa-lg"></i></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="user-header">
+                <img src="../../assets/img/avatar2.png" class="img-circle" alt="User Image">
+                <p>
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <aside class="main-sidebar">
+    <section class="sidebar">
+       <a href="#" class="hidden-xs logo">
+        <img src="../../assets/img/logo.png" class="img-responsive" style="max-width: 70%; margin: 0 auto;">
+      </a>
+      <img src="../../assets/img/avatar2.png" class="img-circle mx-auto d-block" alt="User Image" style="margin-top: 50px;">
+      <span class="text-green online"><i class="fa fa-circle fa-lg"></i></span>
+      <div class="text-center d-block" style="margin-top: 20px; margin-bottom: 30px;">
+        <span class="name-sidebar">Eko Supra</span>
+      </div>
+      <a role="button" class="text-white" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <div class="d-block side-menu">
+          <div class="text-menu">
+            <i class="fa fa-user fa-lg"></i><span style="margin: 0 10px;"> Daftar Kegiatan </span><i class="text-danger fa fa-caret-down"></i>
+          </div>
+        </div>
+      </a>
+      <div style="border-bottom: #fff 1px solid;" id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+        <a class="d-block text-white text-menu">
+          <span>Satu</span>
+        </a>
+        <a class="d-block text-white text-menu">
+          <span>Dua</span>
+        </a>
+      </div>
+      <a role="button" class="text-white">
+        <div class="d-block side-menu">
+          <div class="text-menu">
+            <i class="fa fa-line-chart"></i><span style="margin: 0 7px;"> Statistik Belajar
+          </div>
+        </div>
+      </a>
+      <a role="button" class="text-white">
+        <div class="d-block side-menu">
+          <div class="text-menu">
+            <i class="fa fa-bar-chart"></i><span style="margin: 0 7px;"> Survey
+          </div>
+        </div>
+      </a>
+      <a role="button" class="text-white">
+        <div class="d-block side-menu">
+          <div class="text-menu">
+            <i class="fa fa-file-text-o fa-lg"></i><span style="margin: 0 7px;"> Sertifikat Kegiatan
+          </div>
+        </div>
+      </a>
+      <a role="button" class="text-white" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <div class="d-block side-menu">
+          <div class="text-menu">
+            <i class="fa fa-wpexplorer"></i><span style="margin: 0 10px;"> Info Sertifikat </span><i class="text-danger fa fa-caret-down"></i>
+          </div>
+        </div>
+      </a>
+      <div style="border-bottom: #fff 1px solid;" id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+        <a class="d-block text-white text-menu">
+          <span>Satu</span>
+        </a>
+        <a class="d-block text-white text-menu">
+          <span>Dua</span>
+        </a>
+      </div>
+      <a role="button" class="text-white">
+        <div class="d-block side-menu">
+          <div class="text-menu">
+            <i class="fa fa-file-text-o fa-lg"></i><span style="margin: 0 7px;"> Sertifikat Kegiatan
+          </div>
+        </div>
+      </a>
+    </section>
+    <a role="button" class="text-white logout">
+      <div class="d-block side-menu">
+        <div class="text-menu">
+          <i class="fa fa-sign-out fa-lg"></i><span style="margin: 0 7px;"> Logout
+        </div>
+      </div>
+    </a>
+    <!-- /.sidebar -->
+  </aside>
+
+  <div class="content-wrapper">
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="headingDashboard">
+        <h3>Kursus yang tersedia</h3>
+        <div class="bread">
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">Kursus yang tersedia</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row mb-1">
+        <div class="col-lg-12">
+          <div class="shadow bg-image2 contentKursus">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="contentLeft">
+                  <div class="card">
+                    <div class="headingCard">
+                      <h2>Pretest</h2>
+                    </div>
+                    <div class="listVideo">
+                      <div class="headList">
+                        <h4><b>Modul 1 :</b> Introduction</h4>
+                      </div>
+                      <div class="listvideos">
+                        <ul>
+                          <li class="active">
+                            <div class="link" onclick="onTest(1)"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 1.1 Road Map Web Developer</div>
+                          </li>
+                          <li class="active">
+                            <div class="link" onclick="onTest(2)"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 1.2 Introduction</div>
+                          </li>
+                          <li class="active">
+                            <div class="link" onclick="onTest(3)"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 1.3 Hardware & Software</div>
+                          </li>
+                          <li class="active">
+                            <div class="link" onclick="onTest(4)"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 1.4 Basic HTML Part 1</div>
+                          </li>
+                          <li class="active">
+                            <div class="link" onclick="onTest(5)"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 1.5 Basic HTML Part 2</div>
+                          </li>
+                          <li class="active">
+                            <div class="link" onclick="onTest(6)"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 1.6 Basic HTML Part 3</div>
+                          </li>
+                          <li class="active">
+                            <div class="link" onclick="onTest(7)"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 1.7 Element pada HTML Part 1</div>
+                          </li>
+                          <li class="active">
+                            <div class="link" onclick="onTest(8)"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 1.8 Element pada HTML Part 2</div>
+                          </li>
+                          <li class="active">
+                            <div class="link" onclick="onTest(9)"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 1.9 Element pada HTML Part 3</div>
+                          </li>
+                          <li class="active">
+                            <div class="link" onclick="onTest(10)"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> 2.0 Mengenal CSS Part 1</div>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="contentRight">
+                  
+                  <div id="question1">
+                    <div class="headingTest">
+                      <h2>PRETEST</h2>
+                    </div>
+                    <div class="countTest">
+                      <span>Jumlah soal 1/10</span>
+                    </div>
+                    <div class="textQuestion">
+                      <div class="numTest">1.</div>
+                      <div class="soalTest">
+                        <p>Lorem ipsum dolor sit amet ?</p>
+                      </div>
+                      <div class="chooce">
+                        <ul>
+                          <li>
+                            A. Lorem ipsum
+                          </li>
+                          <li>
+                            B. Lorem ipsum
+                          </li>
+                          <li>
+                            C. Lorem ipsum
+                          </li>
+                          <li>
+                            D. Lorem ipsum
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btnAnswer">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="btnBefore">
+                            <button>Before</button>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="btnNext">
+                            <button>Next</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="question2" class="questionNone">
+                    <div class="headingTest">
+                      <h2>PRETEST</h2>
+                    </div>
+                    <div class="countTest">
+                      <span>Jumlah soal 2/10</span>
+                    </div>
+                    <div class="textQuestion">
+                      <div class="numTest">1.</div>
+                      <div class="soalTest">
+                        <p>Lorem ipsum dolor sit amet ?</p>
+                      </div>
+                      <div class="chooce">
+                        <ul>
+                          <li>
+                            A. Lorem ipsum
+                          </li>
+                          <li>
+                            B. Lorem ipsum
+                          </li>
+                          <li>
+                            C. Lorem ipsum
+                          </li>
+                          <li>
+                            D. Lorem ipsum
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btnAnswer">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="btnBefore">
+                            <button>Before</button>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="btnNext">
+                            <button>Next</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="question3" class="questionNone">
+                    <div class="headingTest">
+                      <h2>PRETEST</h2>
+                    </div>
+                    <div class="countTest">
+                      <span>Jumlah soal 3/10</span>
+                    </div>
+                    <div class="textQuestion">
+                      <div class="numTest">1.</div>
+                      <div class="soalTest">
+                        <p>Lorem ipsum dolor sit amet ?</p>
+                      </div>
+                      <div class="chooce">
+                        <ul>
+                          <li>
+                            A. Lorem ipsum
+                          </li>
+                          <li>
+                            B. Lorem ipsum
+                          </li>
+                          <li>
+                            C. Lorem ipsum
+                          </li>
+                          <li>
+                            D. Lorem ipsum
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btnAnswer">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="btnBefore">
+                            <button>Before</button>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="btnNext">
+                            <button>Next</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="question4" class="questionNone">
+                    <div class="headingTest">
+                      <h2>PRETEST</h2>
+                    </div>
+                    <div class="countTest">
+                      <span>Jumlah soal 4/10</span>
+                    </div>
+                    <div class="textQuestion">
+                      <div class="numTest">1.</div>
+                      <div class="soalTest">
+                        <p>Lorem ipsum dolor sit amet ?</p>
+                      </div>
+                      <div class="chooce">
+                        <ul>
+                          <li>
+                            A. Lorem ipsum
+                          </li>
+                          <li>
+                            B. Lorem ipsum
+                          </li>
+                          <li>
+                            C. Lorem ipsum
+                          </li>
+                          <li>
+                            D. Lorem ipsum
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btnAnswer">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="btnBefore">
+                            <button>Before</button>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="btnNext">
+                            <button>Next</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="question5" class="questionNone">
+                    <div class="headingTest">
+                      <h2>PRETEST</h2>
+                    </div>
+                    <div class="countTest">
+                      <span>Jumlah soal 5/10</span>
+                    </div>
+                    <div class="textQuestion">
+                      <div class="numTest">1.</div>
+                      <div class="soalTest">
+                        <p>Lorem ipsum dolor sit amet ?</p>
+                      </div>
+                      <div class="chooce">
+                        <ul>
+                          <li>
+                            A. Lorem ipsum
+                          </li>
+                          <li>
+                            B. Lorem ipsum
+                          </li>
+                          <li>
+                            C. Lorem ipsum
+                          </li>
+                          <li>
+                            D. Lorem ipsum
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btnAnswer">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="btnBefore">
+                            <button>Before</button>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="btnNext">
+                            <button>Next</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="question6" class="questionNone">
+                    <div class="headingTest">
+                      <h2>PRETEST</h2>
+                    </div>
+                    <div class="countTest">
+                      <span>Jumlah soal 6/10</span>
+                    </div>
+                    <div class="textQuestion">
+                      <div class="numTest">1.</div>
+                      <div class="soalTest">
+                        <p>Lorem ipsum dolor sit amet ?</p>
+                      </div>
+                      <div class="chooce">
+                        <ul>
+                          <li>
+                            A. Lorem ipsum
+                          </li>
+                          <li>
+                            B. Lorem ipsum
+                          </li>
+                          <li>
+                            C. Lorem ipsum
+                          </li>
+                          <li>
+                            D. Lorem ipsum
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btnAnswer">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="btnBefore">
+                            <button>Before</button>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="btnNext">
+                            <button>Next</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="question7" class="questionNone">
+                    <div class="headingTest">
+                      <h2>PRETEST</h2>
+                    </div>
+                    <div class="countTest">
+                      <span>Jumlah soal 7/10</span>
+                    </div>
+                    <div class="textQuestion">
+                      <div class="numTest">1.</div>
+                      <div class="soalTest">
+                        <p>Lorem ipsum dolor sit amet ?</p>
+                      </div>
+                      <div class="chooce">
+                        <ul>
+                          <li>
+                            A. Lorem ipsum
+                          </li>
+                          <li>
+                            B. Lorem ipsum
+                          </li>
+                          <li>
+                            C. Lorem ipsum
+                          </li>
+                          <li>
+                            D. Lorem ipsum
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btnAnswer">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="btnBefore">
+                            <button>Before</button>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="btnNext">
+                            <button>Next</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="question8" class="questionNone">
+                    <div class="headingTest">
+                      <h2>PRETEST</h2>
+                    </div>
+                    <div class="countTest">
+                      <span>Jumlah soal 8/10</span>
+                    </div>
+                    <div class="textQuestion">
+                      <div class="numTest">1.</div>
+                      <div class="soalTest">
+                        <p>Lorem ipsum dolor sit amet ?</p>
+                      </div>
+                      <div class="chooce">
+                        <ul>
+                          <li>
+                            A. Lorem ipsum
+                          </li>
+                          <li>
+                            B. Lorem ipsum
+                          </li>
+                          <li>
+                            C. Lorem ipsum
+                          </li>
+                          <li>
+                            D. Lorem ipsum
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btnAnswer">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="btnBefore">
+                            <button>Before</button>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="btnNext">
+                            <button>Next</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="question9" class="questionNone">
+                    <div class="headingTest">
+                      <h2>PRETEST</h2>
+                    </div>
+                    <div class="countTest">
+                      <span>Jumlah soal 9/10</span>
+                    </div>
+                    <div class="textQuestion">
+                      <div class="numTest">1.</div>
+                      <div class="soalTest">
+                        <p>Lorem ipsum dolor sit amet ?</p>
+                      </div>
+                      <div class="chooce">
+                        <ul>
+                          <li>
+                            A. Lorem ipsum
+                          </li>
+                          <li>
+                            B. Lorem ipsum
+                          </li>
+                          <li>
+                            C. Lorem ipsum
+                          </li>
+                          <li>
+                            D. Lorem ipsum
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btnAnswer">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="btnBefore">
+                            <button>Before</button>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="btnNext">
+                            <button>Next</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="question10" class="questionNone">
+                    <div class="headingTest">
+                      <h2>PRETEST</h2>
+                    </div>
+                    <div class="countTest">
+                      <span>Jumlah soal 10/10</span>
+                    </div>
+                    <div class="textQuestion">
+                      <div class="numTest">1.</div>
+                      <div class="soalTest">
+                        <p>Lorem ipsum dolor sit amet ?</p>
+                      </div>
+                      <div class="chooce">
+                        <ul>
+                          <li>
+                            A. Lorem ipsum
+                          </li>
+                          <li>
+                            B. Lorem ipsum
+                          </li>
+                          <li>
+                            C. Lorem ipsum
+                          </li>
+                          <li>
+                            D. Lorem ipsum
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btnAnswer">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="btnBefore">
+                            <button>Before</button>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="btnNext">
+                            <button onclick="onTest(11)">Finish</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="question11" class="questionNone">
+                    
+                    <div class="textQuestion finish">
+                      <div class="finish">
+                        <h3>Terima Kasih</h3>
+                        <p>Telah menjawab seluruh pertanyaan dari materi ...</p>
+                      </div>
+                    </div>
+                    <div class="btnAnswer">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="btnNext">
+                            <center><button>OK</button></center>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>&copy; 2019 Pusat Edukasi Antikorupsi
+  </footer>
+
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="../../bower_components/raphael/raphael.min.js"></script>
+<script src="../../assets/js/main.js"></script>
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../dist/js/adminlte.min.js"></script>
+
+<script>
+  $(function () {
+    
+    //Handle starring for glyphicon and font awesome
+    
+  });
+</script>
+</body>
+</html>
